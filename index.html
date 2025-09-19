@@ -13,10 +13,14 @@
       <div id="cps">Cookies/sec: <span id="cookies-per-sec">0</span></div>
     </header>
     <main>
-      <button id="cookie-btn">
-        <img src="https://img.icons8.com/emoji/96/chocolate-chip-cookie-emoji.png" alt="Cookie" />
-        <span id="cookie-btn-label">Click Me!</span>
-      </button>
+      <div id="cookie-btn-container" style="position: relative;">
+        <button id="cookie-btn">
+          <img src="https://img.icons8.com/emoji/96/chocolate-chip-cookie-emoji.png" alt="Cookie" />
+          <span id="cookie-btn-label">Click Me!</span>
+        </button>
+        <!-- Pixel effect canvas -->
+        <canvas id="pixel-canvas" width="140" height="140" style="position: absolute; left: 0; top: 0; pointer-events: none;"></canvas>
+      </div>
       <section id="shop">
         <h2>Shop</h2>
         <div id="upgrades"></div>
